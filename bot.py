@@ -6,27 +6,27 @@ from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 API_ID = environ.get('API_ID')
 API_HASH = environ.get('API_HASH')
 BOT_TOKEN = environ.get('BOT_TOKEN')
-API_KEY = environ.get('API_KEY', 'a7OkbXAdRa4t')
+API_KEY = environ.get('API_KEY', 'f90e5fee67ed7eb79442cc9f4ab8e17b6bc0f1cf')
 
 bot = Client('gplink bot',
              api_id=API_ID,
              api_hash=API_HASH,
              bot_token=BOT_TOKEN,
-             workers=999999999,
+             workers=50,
              sleep_threshold=10)
 
 
 @bot.on_message(filters.command('start') & filters.private)
 async def start(bot, message):
     await message.reply(
-        f"**Hi {message.chat.first_name}!**\n\nHi {message.chat.first_name}!** \n\nThis is **5G link | URL Shorter Bot**. Just send me any big link and get short link.",
+        f"**Hi {message.chat.first_name}!**\n\nHi {message.chat.first_name}!** \n\nThis is **5Glink.in | URL Shorter Bot**. Just send me any big url link for create and share trusted powerful links.",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton('Bots Updates Channel', url='https://t.me/Mani5GRockers')
+                    InlineKeyboardButton('✪ Support Group ✪', url='https://t.me/fiveglink_in')
                 ],
                 [
-                    InlineKeyboardButton('Support Group', url='https://t.me/Mani5GRockers')
+                    InlineKeyboardButton('✪ 5Glink.in ✪', url='https://5glink.in')
                 ]
             ]
         )
