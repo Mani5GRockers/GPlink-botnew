@@ -12,7 +12,7 @@ bot = Client('gplink bot',
              api_id=API_ID,
              api_hash=API_HASH,
              bot_token=BOT_TOKEN,
-             workers=100000,
+             workers=999999999,
              sleep_threshold=10)
 
 
