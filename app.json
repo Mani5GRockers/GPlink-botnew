@@ -21,7 +21,7 @@
             "value": ""
         },
         "API_KEY": {
-            "description": "Get API key from https://link.mgrupdates.tk/member/tools/api",
+            "description": "Get API key from https://bitly.mgrupdates.tk/user/tools#api",
             "required": false
         }
     },
