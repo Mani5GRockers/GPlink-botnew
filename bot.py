@@ -6,7 +6,7 @@ from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 API_ID = environ.get('API_ID')
 API_HASH = environ.get('API_HASH')
 BOT_TOKEN = environ.get('BOT_TOKEN')
-API_KEY = environ.get('API_KEY', '83be8e39b95ce0b05a5792f5e195d64a47de4713')
+API_KEY = environ.get('API_KEY', 'a7OkbXAdRa4t')
 
 bot = Client('gplink bot',
              api_id=API_ID,
@@ -19,7 +19,7 @@ bot = Client('gplink bot',
 @bot.on_message(filters.command('start') & filters.private)
 async def start(bot, message):
     await message.reply(
-        f"**Hi {message.chat.first_name}!**\n\nHi {message.chat.first_name}!** \n\nThis is **GPLinks URL Shorter Bot**. Just send me any big link and get short link.",
+        f"**Hi {message.chat.first_name}!**\n\nHi {message.chat.first_name}!** \n\nThis is **5G link | URL Shorter Bot**. Just send me any big link and get short link.",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
