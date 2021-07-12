@@ -6,7 +6,7 @@ from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 API_ID = environ.get('API_ID')
 API_HASH = environ.get('API_HASH')
 BOT_TOKEN = environ.get('BOT_TOKEN')
-API_KEY = environ.get('API_KEY', 'f90e5fee67ed7eb79442cc9f4ab8e17b6bc0f1cf')
+API_KEY = environ.get('API_KEY', 'f5d2870b6ae620a908ca908b9889ce308a262ad3')
 
 bot = Client('gplink bot',
              api_id=API_ID,
@@ -26,7 +26,7 @@ async def start(bot, message):
                     InlineKeyboardButton('✪ Support Group ✪', url='https://t.me/fiveglink_in')
                 ],
                 [
-                    InlineKeyboardButton('✪ 5Glink.in ✪', url='https://5glink.in')
+                    InlineKeyboardButton('✪ 5Glink.in ✪', url='https://awslink.in')
                 ]
             ]
         )
@@ -55,7 +55,7 @@ async def link_handler(bot, message):
 
 
 async def get_shortlink(link):
-    url = 'https://5glink.in/api'
+    url = 'https://awslink.in/api'
     params = {'api': API_KEY, 'url': link}
 
     async with aiohttp.ClientSession() as session:
