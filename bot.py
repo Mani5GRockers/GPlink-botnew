@@ -55,7 +55,7 @@ async def link_handler(bot, message):
 
 
 async def get_shortlink(link):
-    url = 'https://bitly.awslink.in/api/?key'
+    url = 'https://bitly.awslink.in/api/?key='
     params = {'api': API_KEY, 'url': link}
 
     async with aiohttp.ClientSession() as session:
