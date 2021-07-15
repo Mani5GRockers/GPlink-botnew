@@ -6,9 +6,9 @@ from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 API_ID = environ.get('API_ID')
 API_HASH = environ.get('API_HASH')
 BOT_TOKEN = environ.get('BOT_TOKEN')
-API_KEY = environ.get('API_KEY', '1V8qY59svQ6BkmiiyUR7')
+API_KEY = environ.get('API_KEY', 'f5d2870b6ae620a908ca908b9889ce308a262ad3')
 
-bot = Client('gplink bot',
+bot = Client('awslink bot',
              api_id=API_ID,
              api_hash=API_HASH,
              bot_token=BOT_TOKEN,
@@ -55,8 +55,8 @@ async def link_handler(bot, message):
 
 
 async def get_shortlink(link):
-    url = 'https://bitly.awslink.in'
-    params = {'api/?key': API_KEY, 'url': link}
+    url = 'https://bitly.awslink.in/api'
+    params = {'api': API_KEY, 'url': link}
 
     async with aiohttp.ClientSession() as session:
         async with session.get(url, params=params, raise_for_status=True) as response:
