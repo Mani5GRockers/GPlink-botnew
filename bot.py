@@ -6,7 +6,7 @@ from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 API_ID = environ.get('API_ID')
 API_HASH = environ.get('API_HASH')
 BOT_TOKEN = environ.get('BOT_TOKEN')
-API_KEY = environ.get('API_KEY', 'f5d2870b6ae620a908ca908b9889ce308a262ad3')
+API_KEY = environ.get('API_KEY', '1V8qY59svQ6BkmiiyUR7')
 
 bot = Client('gplink bot',
              api_id=API_ID,
@@ -19,14 +19,14 @@ bot = Client('gplink bot',
 @bot.on_message(filters.command('start') & filters.private)
 async def start(bot, message):
     await message.reply(
-        f"**Hi {message.chat.first_name}!**\n\nHi {message.chat.first_name}!** \n\nThis is **5Glink.in | URL Shorter Bot**. Just send me any big url link for create and share trusted powerful links.",
+        f"**Hi {message.chat.first_name}!**\n\nHi {message.chat.first_name}!** \n\nThis is **AWSlink.in | Short URL Bot**. Just send me any big url link for create and share trusted powerful links.",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton('✪ Support Group ✪', url='https://t.me/fiveglink_in')
                 ],
                 [
-                    InlineKeyboardButton('✪ 5Glink.in ✪', url='https://awslink.in')
+                    InlineKeyboardButton('✪ AWSlink.in ✪', url='https://awslink.in')
                 ]
             ]
         )
@@ -55,7 +55,7 @@ async def link_handler(bot, message):
 
 
 async def get_shortlink(link):
-    url = 'https://awslink.in/api'
+    url = 'https://bitly.awslink.in/api/?key'
     params = {'api': API_KEY, 'url': link}
 
     async with aiohttp.ClientSession() as session:
