@@ -23,7 +23,7 @@ async def start(bot, message):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton('✪ Support Group ✪', url='https://t.me/fiveglink_in')
+                    InlineKeyboardButton('✪ Support Group ✪', url='https://bitly.awslink.in/awsmirrorzone')
                 ],
                 [
                     InlineKeyboardButton('✪ AWSlink.in ✪', url='https://awslink.in')
@@ -40,11 +40,11 @@ async def link_handler(bot, message):
     try:
         short_link = await get_shortlink(link)
         await message.reply(
-            text=f"Here is your short link: {short_link}",
+            text=f"✅ Here is your short link: {short_link}",
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton('Open Link', url=short_link)
+                        InlineKeyboardButton('Open Link 🚀', url=short_link)
                     ]
                 ]
             ),
