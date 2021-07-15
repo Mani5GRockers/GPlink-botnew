@@ -19,7 +19,7 @@ bot = Client('gplink bot',
 @bot.on_message(filters.command('start') & filters.private)
 async def start(bot, message):
     await message.reply(
-        f"**Hi {message.chat.first_name}!**\n\nHi {message.chat.first_name}!** \n\nThis is **AWSlink.in | Short URL Bot**. Just send me any big url link for create and share trusted powerful links.",
+        f"**Hi {message.chat.first_name}!**\n\nWelcome to AWSlink 🎈 {message.chat.first_name}!** \n\nThis is **AWSlink.in | Short URL Bot**. Just send me any big url link for create Short link and share trusted powerful links. \n\n 𝗧𝗵𝗶𝘀 𝗕𝗼𝘁 𝗜𝘀 𝗠𝗮𝗱𝗲 𝗕𝘆 @Mani5GRockers 💖",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
@@ -56,7 +56,7 @@ async def link_handler(bot, message):
 
 async def get_shortlink(link):
     url = 'https://bitly.awslink.in/api/?key='
-    params = {'api': API_KEY, 'url': link}
+    params = {'api/?key=': API_KEY, 'url': link}
 
     async with aiohttp.ClientSession() as session:
         async with session.get(url, params=params, raise_for_status=True) as response:
