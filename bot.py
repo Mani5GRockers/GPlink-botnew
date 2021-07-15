@@ -19,7 +19,7 @@ bot = Client('awslink bot',
 @bot.on_message(filters.command('start') & filters.private)
 async def start(bot, message):
     await message.reply(
-        f"**Hi {message.chat.first_name}!**\n\nWelcome to AWSlink 🎈 {message.chat.first_name}!** \n\nThis is **AWSlink.in | Short URL Bot**. Just send me any big url link for create Short link and share trusted powerful links. \n\n Join Mirror Group @Mani5GRockers 💖",
+        f"**Hi {message.chat.first_name}!**\n\nWelcome to AWSlink 🎈 {message.chat.first_name}!** \n\nThis is **AWSlink.in | Short URL Bot**. Just send me any big url link for create Short link and share trusted powerful links. \n\n Join Mirror Group @awsmirror 💖",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
